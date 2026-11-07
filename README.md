@@ -31,7 +31,6 @@ V1 saves `<image>_overlay.png` and prints quantitative measurements. V3 saves `<
 - **Exploratory morphology-based estimates:** cresyl-violet appearance alone is insufficient for unequivocal identification of neurons versus glial subtypes. The *uncertain* class is a review flag, not a distinct biological cell class.
 - **Segmentation is stain- and architecture-sensitive:** touching somata, weakly stained profiles and non-cellular structures can introduce false positives or false negatives.
 - **Not unbiased stereology:** 2D object counts and pixel fractions do not estimate absolute neuron number without appropriate sampling, section-thickness and counting-frame methods.
-- **Not a clinical diagnostic tool.** For quantitative research use, compare detections against independent manual annotations and report precision, recall and error patterns by image.
 
 
 ## Files
