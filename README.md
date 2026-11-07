@@ -24,26 +24,6 @@ Install Python and dependencies:
 python -m pip install -r requirements.txt
 ```
 
-Run **V1** on a raw, unannotated Nissl image:
-
-```bash
-python nissl_pipeline.py path/to/image.png results_v1
-```
-
-Run **V3 Clean**:
-
-```bash
-python ca3_nissl_v3_clean.py path/to/image.png --out results_v3
-```
-
-To process multiple images with V3:
-
-```bash
-python ca3_nissl_v3_clean.py image_A.png image_C.png image_H.png --out results_v3
-```
-
-On Windows, you can use `py` instead of `python`.
-
 V1 saves `<image>_overlay.png` and prints quantitative measurements. V3 saves `<image>_V3.png` and a run-level `summary.csv` containing `image`, `neurons`, `glia`, `uncertain` and `total`. Use `--export-points` with V3 to additionally save per-centre coordinates.
 
 ## Interpretation and limitations
@@ -53,7 +33,6 @@ V1 saves `<image>_overlay.png` and prints quantitative measurements. V3 saves `<
 - **Not unbiased stereology:** 2D object counts and pixel fractions do not estimate absolute neuron number without appropriate sampling, section-thickness and counting-frame methods.
 - **Not a clinical diagnostic tool.** For quantitative research use, compare detections against independent manual annotations and report precision, recall and error patterns by image.
 
-The figure is a side-by-side visualization of algorithm outputs, **not** a validation accuracy plot.
 
 ## Files
 
